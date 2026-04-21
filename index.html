@@ -7,6 +7,59 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./fonts.css">
     <title>Blog</title>
+    <style>
+        .slider_a {
+            position: relative;
+            width: 100%;
+            height: 33.313rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+
+        .slider_a_wrapper {
+            z-index: 1;
+            width: 300%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            transition: all 1s ease-in-out;
+        }
+
+        .slider_a_element {
+            width: calc(100%/3);
+            height: 100%;
+        }
+
+        .slider_a input {
+            z-index: 2;
+        }
+
+        .element_one {
+            background-image: url("./assets/img/header\ photo.png");
+        }
+
+        .element_two {
+            background-color: brown;
+        }
+
+        .element_three {
+            background-color: goldenrod;
+        }
+
+        .slider_a input[value="one"]:checked~.slider_a_wrapper {
+            transform: translateX(calc(100%/3));
+        }
+
+        .slider_a input[value="two"]:checked~.slider_a_wrapper {
+            transform: translateX(0);
+        }
+
+        .slider_a input[value="three"]:checked~.slider_a_wrapper {
+            transform: translateX(calc(-100%/3));
+        }
+    </style>
 </head>
 
 <body>
@@ -20,11 +73,22 @@
                 landscapes of Scandinavia, each destination offers a distinct way to explore the world. </p>
         </header>
         <div class="slider">
-            <img src="./assets/img/header photo.png" alt="">
+            <!-- <img src="./assets/img/header photo.png" alt=""> -->
+            <section class="slider_a">
+                <input type="radio" name="slider" value="one" checked>
+                <input type="radio" name="slider" value="two">
+                <input type="radio" name="slider" value="three">
+
+                <div class="slider_a_wrapper">
+                    <div class="slider_a_element element_one"></div>
+                    <div class="slider_a_element element_two"></div>
+                    <div class="slider_a_element element_three"></div>
+                </div>
+            </section>
         </div>
     </section>
 
-    <section class="contact">
+    <!-- <section class="contact">
         <div class="contact_form">
             <img src="" alt="">
             <h2>Contact form</h2>
@@ -51,7 +115,7 @@
             <img src="img/facebook.png" alt="">
             <img src="img/Instagram_logo_2016 1.png" alt="">
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
