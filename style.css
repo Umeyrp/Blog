@@ -8,3 +8,21 @@ html {
     font-size: 16px;
 }
 
+footer{
+    background-color: #4ea487;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_copyright{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_schriftlich{
+    display: flex;
+    flex-direction: row;
+}
