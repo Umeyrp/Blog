@@ -464,8 +464,13 @@ li {
     font-weight: 700;
 }
 
-.tipps{
+.tipps {
     border-radius: 1.875rem;
     padding: 26px 16px;
     background-color: #4EA48733;
+}
+
+.tipps span {
+    color: #4EA487;
+    font-weight: 700;
 }
