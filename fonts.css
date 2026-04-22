@@ -5,7 +5,7 @@
     font-family: 'Palanquin Dark';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/palanquin-dark-v17-latin-regular.woff2') format('woff2');
+    src: url('./assets/fonts/palanquin-dark-v17-latin-regular.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -16,7 +16,7 @@
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/palanquin-v17-latin-regular.woff2') format('woff2');
+    src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -27,7 +27,7 @@
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/palanquin-v17-latin-500.woff2') format('woff2');
+    src: url('./assets/fonts/palanquin-v17-latin-500.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -38,7 +38,7 @@
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/palanquin-v17-latin-700.woff2') format('woff2');
+    src: url('./assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -49,7 +49,7 @@
     font-family: 'Arima';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/arima-v7-latin-regular.woff2') format('woff2');
+    src: url('./assets/fonts/arima-v7-latin-regular.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -60,6 +60,6 @@
     font-family: 'Arima';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/arima-v7-latin-700.woff2') format('woff2');
+    src: url('./assets/fonts/arima-v7-latin-700.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
