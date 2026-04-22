@@ -64,7 +64,8 @@ html {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 60px 120px;
+    padding: 60px 119px 60px 121px ;
+    gap: 24px;
 }
 
 .contact_from {
