@@ -8,6 +8,13 @@ html {
     font-size: 16px;
 }
 
+
+.highlights_section,
+.footer{
+    /*Contentbegrenzung*/
+    padding: 0rem max(calc(50% - 720px), 0rem);
+}
+
 .highlights_section {
     margin-top: 6.625rem;
     display: flex;
