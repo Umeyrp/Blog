@@ -35,7 +35,9 @@
             transition: opacity 150ms;
         }
 
-        .slider_a input {
+        .slider_buttons_wrapper {
+            display: flex;
+            gap: 1.375rem;
             z-index: 2;
         }
 
@@ -75,7 +77,26 @@
         .slider_a:has(input[value="four"]:checked) .element_four {
             opacity: 1;
             z-index: 1;
+        }
 
+        .slider_a:has(input[value="one"]:checked) .radio_button_one {
+            width: 2.5rem;
+            background-color: #F1C953;
+        }
+
+        .slider_a:has(input[value="two"]:checked) .radio_button_two {
+            width: 2.5rem;
+            background-color: #F1C953;
+        }
+
+        .slider_a:has(input[value="three"]:checked) .radio_button_three {
+            width: 2.5rem;
+            background-color: #F1C953;
+        }
+
+        .slider_a:has(input[value="four"]:checked) .radio_button_four {
+            width: 2.5rem;
+            background-color: #F1C953;
         }
 
         .slider_element_text {
@@ -103,6 +124,14 @@
             font-size: 1.75rem;
             line-height: 110%;
         }
+
+        .radio_button {
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: 1.25rem;
+            background-color: white;
+            margin-bottom: 2.75rem;
+        }
     </style>
 </head>
 
@@ -119,14 +148,24 @@
         <div class="slider">
             <!-- <img src="./assets/img/header photo.png" alt=""> -->
             <section class="slider_a">
-                <label for="slider">
-                <input type="radio" name="slider" value="one" checked>
-                    <h2>tste</h2>
-                </label>
-                <input type="radio" name="slider" value="two">
-                <input type="radio" name="slider" value="three">
-                <input type="radio" name="slider" value="four">
-
+                <div class="slider_buttons_wrapper">
+                    <label for="one">
+                        <div class="radio_button radio_button_one"></div>
+                        <input hidden type="radio" id="one" name="slider" value="one" checked>
+                    </label>
+                    <label for="two">
+                        <div class="radio_button radio_button_two"></div>
+                        <input hidden type="radio" id="two" name="slider" value="two">
+                    </label>
+                    <label for="three">
+                        <div class="radio_button radio_button_three"></div>
+                        <input hidden type="radio" id="three" name="slider" value="three">
+                    </label>
+                    <label for="four">
+                        <div class="radio_button radio_button_four"></div>
+                        <input hidden type="radio" id="four" name="slider" value="four">
+                    </label>
+                </div>
                 <div class="slider_a_wrapper">
                     <a href="https://www.google.com" target="_blank">
                         <div class="slider_a_element element_one">
