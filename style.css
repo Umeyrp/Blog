@@ -130,7 +130,7 @@ details > summary > h4 {
 }
 
 .arrow-img{
-    transition: transform 0.7s ease;
+    transition: transform 0.5s ease;
 }
 
 details[open] .arrow-img{
@@ -229,10 +229,24 @@ details>p{
 .privacy_policy {
     color: #4EA487;
 }
+.privacy_policy a {
+    font-weight: normal;
+    transition: font-weight 0.2s ease;
+    text-decoration: none;
+}
 
-#check {
-    color: #54370D;
-    padding: 1rem 0 2rem 0;
+.privacy_policy a:hover {
+    font-weight: 500;
+    text-shadow: 0.5px 0 0 currentColor;
+}
+
+.privacy_policy a,
+.privacy_policy a:visited,
+.privacy_policy a:active {
+    color: #4ea487;
+}
+#checkbox{
+    background-color: #4ea487;
 }
 
 button {
