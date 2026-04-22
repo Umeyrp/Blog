@@ -20,7 +20,7 @@
 
         .slider_a_wrapper {
             z-index: 1;
-            width: 300%;
+            width: 400%;
             height: 100%;
             position: absolute;
             display: flex;
@@ -28,7 +28,8 @@
         }
 
         .slider_a_element {
-            width: calc(100%/3);
+            position: relative;
+            width: calc(100%/4);
             height: 100%;
         }
 
@@ -37,27 +38,61 @@
         }
 
         .element_one {
-            background-image: url("./assets/img/header\ photo.png");
+            background-image: url("./assets/img/slider_image_1.png");
         }
 
         .element_two {
-            background-color: brown;
+            background-image: url("./assets/img/slider_image_2.png");
         }
 
         .element_three {
-            background-color: goldenrod;
+            background-image: url("./assets/img/slider_image_3.png");
+        }
+
+        .element_four {
+            background-image: url("./assets/img/slider_image_4.png");
         }
 
         .slider_a input[value="one"]:checked~.slider_a_wrapper {
-            transform: translateX(calc(100%/3));
+            transform: translateX(calc(100% * 0.375));
         }
 
         .slider_a input[value="two"]:checked~.slider_a_wrapper {
-            transform: translateX(0);
+            transform: translateX(calc(100% * 0.125));
         }
 
         .slider_a input[value="three"]:checked~.slider_a_wrapper {
-            transform: translateX(calc(-100%/3));
+            transform: translateX(calc(-100%/8));
+        }
+
+        .slider_a input[value="four"]:checked~.slider_a_wrapper {
+            transform: translateX(calc(-100%*0.375));
+        }
+
+        .slider_element_text {
+            width: 72%;
+            top: 3.375rem;
+            left: 2.375rem;
+            padding: 1rem 1.5rem;
+            position: absolute;
+            color: white;
+            background: #FFFFFF1A;
+            backdrop-filter: blur(5px);
+        }
+
+        .slider_element_text h2 {
+            font-family: Palanquin Dark;
+            font-weight: 600;
+            font-size: 3rem;
+            padding-bottom: 0.5rem;
+            line-height: 100%;
+        }
+
+        .slider_element_text p {
+            font-family: Palanquin;
+            font-weight: 400;
+            font-size: 1.75rem;
+            line-height: 110%;
         }
     </style>
 </head>
@@ -78,11 +113,39 @@
                 <input type="radio" name="slider" value="one" checked>
                 <input type="radio" name="slider" value="two">
                 <input type="radio" name="slider" value="three">
+                <input type="radio" name="slider" value="four">
 
                 <div class="slider_a_wrapper">
-                    <div class="slider_a_element element_one"></div>
-                    <div class="slider_a_element element_two"></div>
-                    <div class="slider_a_element element_three"></div>
+                    <div class="slider_a_element element_one">
+                        <div class="slider_element_text">
+                            <h2>The World’s Most Breathtaking Beaches</h2>
+                            <p>From powder-soft white sands to dramatic coastlines kissed by turquoise waves, these
+                                beaches are more than destinations — they’re feelings.</p>
+                        </div>
+                    </div>
+                    <div class="slider_a_element element_two">
+                        <div class="slider_element_text">
+                            <h2>Copenhagen in 3 Days: Big Experiences, Smart Spending</h2>
+                            <p>Discover Copenhagen, where historic charm meets modern design, vibrant cycling culture
+                                and waterfront living.</p>
+                        </div>
+                    </div>
+                    <div class="slider_a_element element_three">
+                        <div class="slider_element_text">
+                            <h2>Pattaya Pulse:<br>
+                                Food, Sun and Neon Nights</h2>
+                            <p>From bustling promenades to nearby islands, the city offers an energetic and diverse
+                                escape. Discover Pattaya City, with vibrant nightlife and rich cultural landmarks.</p>
+                        </div>
+                    </div>
+                    <div class="slider_a_element element_four">
+                        <div class="slider_element_text">
+                            <h2>Mountain Fuji</h2>
+                            <p>The most iconic mountain and an active volcano located about 100 kilometers southwest of
+                                Tokyo. Written with the characters for “wealth” and “samurai,” Fuji’s name evokes a
+                                sense of strength, honor, and enduring prestige.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
