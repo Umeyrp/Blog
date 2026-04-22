@@ -8,7 +8,57 @@ html {
     font-size: 16px;
 }
 
-footer{
+.highlights_section {
+    margin-top: 6.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.5rem;
+}
+
+.highlights_header {
+    padding: 0 7.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.highlights_header p {
+    font-family: Palanquin;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #54370D;
+}
+
+.highlights_header_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.highlights_header h2 {
+    font-family: Arima;
+    font-weight: 700;
+    font-size: 3.25rem;
+    color: #4EA487;
+}
+
+.highlights_header>img {
+    height: 3rem;
+}
+
+.slider {
+    width: 100%;
+    padding: 0 7.5rem;
+}
+
+.slider img {
+    max-width: 100%;
+}
+
+footer {
     background-color: #4ea487;
     color: white;
     font-size: 1rem;
@@ -22,25 +72,25 @@ footer{
     align-items: center;
 }
 
-.footer_schriftlich{
+.footer_schriftlich {
     display: flex;
     flex-direction: row;
     gap: 4.5rem;
 }
 
-.footer_copyright{
+.footer_copyright {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.25rem;
 }
 
-.footer_copyright>img{
+.footer_copyright>img {
     width: 20px;
     height: 20px;
 }
 
-.footer_social{
+.footer_social {
     display: flex;
     gap: 1rem;
 }
