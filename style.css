@@ -64,16 +64,70 @@ footer {
     max-width: 100%;
 }
 
+.faq{
+    display: 100%;
+    padding: 7.813rem 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq_main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.faq_container > summary {
+
+    list-style: none;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+details{
+    height: 61px;
+    width: 1200px;
+    background-color: #f1c953;;
+    border: solid 0px;
+    border-radius: 12px;
+
+    padding: 16px 14px;
+}
+
+details>summary{
+    list-style: none;
+}
+
+
+.arrow-img{
+    transition: transform 0.7s ease;
+}
+
+details[open] .arrow-img{
+    transform: rotate(-180deg);
+    
+} 
+
+details>p{
+    background-color: white;
+}
+
 .form {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 3.75rem 7.5rem;
+    padding: 7.813rem 7.5rem;
 }
 
 .contact_from {
-    height: 598px;
-    width: 1100px;
+    height: 37.375rem;
+    width: 68.75rem;
 
     display: flex;
     flex-direction: column;
@@ -83,14 +137,14 @@ footer {
 .contact_from>div {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 2.5rem;
     width: 100%;
 }
 
 .contact_main {
     font-family: Arima;
     font-weight: 700;
-    font-size: 52px;
+    font-size: 3.25rem;
     color: #4EA487;
 
     display: flex;
@@ -100,12 +154,12 @@ footer {
 }
 
 .contact_main h3 {
-    margin-left: -30px;
+    margin-left: -1.875rem;
 }
 
 .contact_main>img {
-    height: 48px;
-    width: 48px;
+    height: 3rem;
+    width: 3rem;
 
 }
 
@@ -114,7 +168,7 @@ footer {
     font-family: Palanquin;
     font-weight: 500;
     font-style: medium;
-    font-size: 24px;
+    font-size: 1.5rem;
 
     text-align: center;
     line-height: 1;
@@ -125,12 +179,12 @@ footer {
     font-family: Palanquin;
     font-weight: 500;
     font-style: medium;
-    font-size: 24px;
+    font-size: 1.5rem;
 
     display: flex;
     flex-direction: column;
     flex: 1;
-    gap: 10px;
+    gap: 0.625;
     padding: 3rem 0 0 0
 }
 
@@ -161,17 +215,17 @@ button {
     align-items: center;
 
     font-family: Arima;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #737373;
 
     background-color: white;
     border: solid 1px #737373;
     border-radius: 40px;
-    padding: 24px 24px;
+    padding: 1.5rem 1.5rem;
 
-    height: 48px;
-    width: 139px;
+    height: 3rem;
+    width: 8.688rem;
 }
 
 footer {
@@ -204,8 +258,8 @@ footer {
 }
 
 .footer_copyright>img {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 .footer_social {
