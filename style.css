@@ -8,6 +8,13 @@ html {
     font-size: 16px;
 }
 
+
+.highlights_section,
+.footer {
+    /*Contentbegrenzung*/
+    padding: 0rem max(calc(50% - 720px), 0rem);
+}
+
 .highlights_section {
     margin-top: 6.625rem;
     display: flex;
@@ -57,43 +64,131 @@ html {
     padding: 0 7.5rem;
 }
 
-.slider img {
-    max-width: 100%;
-}
-
-footer {
-    background-color: #4ea487;
-    color: white;
-    font-size: 1rem;
-
+.slider_a {
+    position: relative;
     width: 100%;
-    height: 9.5rem;
-    padding: 60px 120px 60px 120px;
-
+    height: 33.313rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.footer_schriftlich {
+.slider_a_wrapper {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    gap: 4.5rem;
 }
 
-.footer_copyright {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.25rem;
+.slider_a_element {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 150ms;
+    cursor: pointer;
+    border-top-right-radius: 100px;
 }
 
-.footer_copyright>img {
-    width: 20px;
-    height: 20px;
+.slider_buttons_wrapper {
+    display: flex;
+    gap: 1.375rem;
+    z-index: 2;
 }
 
-.footer_social {
-    display: flex;
-    gap: 1rem;
+.element_one {
+    background-image: url("./assets/img/slider_image_1.png");
+}
+
+.element_two {
+    background-image: url("./assets/img/slider_image_2.png");
+}
+
+.element_three {
+    background-image: url("./assets/img/slider_image_3.png");
+}
+
+.element_four {
+    background-image: url("./assets/img/slider_image_4.png");
+}
+
+.slider_a:has(input[value="one"]:checked) .element_one {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slider_a:has(input[value="two"]:checked) .element_two {
+    opacity: 1;
+    z-index: 1;
+
+}
+
+.slider_a:has(input[value="three"]:checked) .element_three {
+    opacity: 1;
+    z-index: 1;
+
+}
+
+.slider_a:has(input[value="four"]:checked) .element_four {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slider_a:has(input[value="one"]:checked) .radio_button_one {
+    width: 2.5rem;
+    background-color: #F1C953;
+}
+
+.slider_a:has(input[value="two"]:checked) .radio_button_two {
+    width: 2.5rem;
+    background-color: #F1C953;
+}
+
+.slider_a:has(input[value="three"]:checked) .radio_button_three {
+    width: 2.5rem;
+    background-color: #F1C953;
+}
+
+.slider_a:has(input[value="four"]:checked) .radio_button_four {
+    width: 2.5rem;
+    background-color: #F1C953;
+}
+
+.slider_element_text {
+    width: 72%;
+    top: 3.375rem;
+    left: 2.375rem;
+    padding: 1rem 1.5rem;
+    position: absolute;
+    color: white;
+    background: #FFFFFF1A;
+    backdrop-filter: blur(5px);
+}
+
+.slider_element_text h2 {
+    font-family: Palanquin Dark;
+    font-weight: 600;
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+    line-height: 100%;
+}
+
+.slider_element_text p {
+    font-family: Palanquin;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 110%;
+}
+
+.radio_button {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 1.25rem;
+    background-color: white;
+    margin-bottom: 2.75rem;
+    cursor: pointer;
 }
