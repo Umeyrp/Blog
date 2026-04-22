@@ -60,17 +60,17 @@ html {
 }
 
 
+
 .form {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 60px 119px 60px 121px ;
+    padding: 60px 119px 200px 121px ;
 }
 
 .contact_from {
     height: 598px;
     width: 1100px;
-    gap: 16px;
 
     display: flex;
     flex-direction: column;
@@ -94,7 +94,9 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+}
+.contact_main h3 {
+    margin-left: -30px;
 }
 
 .contact_main>img{
@@ -111,6 +113,7 @@ html {
     font-size: 24px;
 
     text-align: center;
+    line-height: 1;
 }
 
 .label {
@@ -118,23 +121,25 @@ html {
     font-family: Palanquin;
     font-weight: 500;
     font-style: medium;
+    font-size: 24px;
 
     display: flex;
     flex-direction: column;
     flex: 1;               
-    gap: 17px;
-    font-size: 18px;
-    padding-top: 2rem;
+    gap: 10px;
+    padding: 3rem 0 0 0
 }
 
 .label input {
     color: #4EA487;
+    font-family: Palanquin;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 24px;
+
     border: none;
-    border-bottom: 1px solid #333;
-    background-color: transparent;
+    border-bottom: 1px solid #54370D;
     outline: none;
-    padding: 8px 0;
-    width: 100%;
 }
 
 .privacy_policy{
@@ -142,15 +147,20 @@ html {
 }
 
 #check{
-    padding: 0 0 2rem 0;
+    color: #54370D;
+    padding: 1rem 0 2rem 0;
 }
 
 button{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    font-family: Arima;
     font-size: 24px;
+    font-weight: 700;
     color: #737373;
+
     background-color: white;
     border: solid 1px #737373;
     border-radius:40px;
@@ -170,8 +180,7 @@ footer {
 
     width: 100%;
     height: 9.5rem;
-    padding: 60px 120px 60px 120px;
-
+    padding: 0rem max(calc(50% - 720px), 0rem);
     display: flex;
     justify-content: space-between;
     align-items: center;
