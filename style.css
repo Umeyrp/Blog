@@ -82,19 +82,19 @@ footer {
 
 .faq_main>h3{
     color: #4EA487;
-    font-size: 52px;
+    font-size: 3.25rem;
 }
 
 .faq_main>img {
-    height: 48px;
-    width: 48px;
+    height: 3rem;
+    width: 3rem;
 }
 
 .faq_container{
-    width: 1200px;
+    width: 75rem;
     border: solid 0px;
-    border-radius: 12px;
-    padding: 16px 14px;
+    border-radius: 0.75rem;
+    padding: 1rem 0.875rem;
 
 }
 
@@ -107,24 +107,26 @@ footer {
     cursor: pointer;
 }
 
-details{
-    height: 61px;
+details {
     width: 1200px;
-    background-color: #f1c953;;
+    background-color: #f1c953;
     border: solid 0px;
-    border-radius: 12px;
-
-    padding: 16px 14px;
+    border-radius: 0.75rem;
+    padding: 1rem 0.875rem;
 }
 
-details>summary{
+details > summary {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.813rem;
 }
 
-details>summary>h3{
+details > summary > h4 {
     font-family: Palanquin;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 1.5rem;
+    color: #54370D;
 }
 
 .arrow-img{
@@ -138,6 +140,8 @@ details[open] .arrow-img{
 
 details>p{
     background-color: white;
+    color: #54370D;
+    font-size: 1rem;
 }
 
 .form {
@@ -267,6 +271,7 @@ footer {
 }
 
 .footer_schriftlich {
+    font-family: Palaquin ;
     display: flex;
     flex-direction: row;
     gap: 4.5rem;
