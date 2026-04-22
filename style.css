@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -57,6 +58,90 @@ html {
 .slider img {
     max-width: 100%;
 }
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 120px;
+}
+
+.contact_from {
+    height: 598px;
+    width: 1100px;
+    gap: 56px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_from > div {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    padding: 0 60px;
+}
+
+.contact_from>p{
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact_main{
+    width: 100%;
+    font-weight: 700;
+    font-size: 52px;
+    color: #4EA487;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_main>img{
+    height: 48px ;
+    width: 48px;
+
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    flex: 1;                  /* cada label ocupa metade da largura */
+    gap: 8px;
+    font-size: 18px;
+}
+
+.label input {
+    color: #4EA487;
+    border: none;
+    border-bottom: 1px solid #333;
+    background-color: transparent;
+    outline: none;
+    padding: 8px 0;
+    width: 100%;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #737373;
+    background-color: white;
+    border: solid 1px #737373;
+    border-radius:40px;
+    padding: 24px 24px;
+
+    height: 48px;
+    width: 139px;
+}
+
+
+
 
 footer {
     background-color: #4ea487;
