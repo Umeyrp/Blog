@@ -72,6 +72,7 @@ html {
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .slider_a_wrapper {
@@ -89,6 +90,8 @@ html {
     opacity: 0;
     z-index: 0;
     transition: opacity 150ms;
+    cursor: pointer;
+    border-top-right-radius: 100px;
 }
 
 .slider_buttons_wrapper {
@@ -187,4 +190,5 @@ html {
     border-radius: 1.25rem;
     background-color: white;
     margin-bottom: 2.75rem;
+    cursor: pointer;
 }
