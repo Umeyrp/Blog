@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -7,6 +6,12 @@
 
 html {
     font-size: 16px;
+}
+
+.form_section,
+footer {
+    /*Contentbegrenzung*/
+    padding: 0rem max(calc(50% - 720px), 0rem);
 }
 
 .highlights_section {
@@ -59,13 +64,11 @@ html {
     max-width: 100%;
 }
 
-
-
 .form {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 60px 119px 200px 121px ;
+    padding: 3.75rem 7.5rem;
 }
 
 .contact_from {
@@ -77,14 +80,14 @@ html {
     align-items: center;
 }
 
-.contact_from > div {
+.contact_from>div {
     display: flex;
     flex-direction: row;
     gap: 40px;
     width: 100%;
 }
 
-.contact_main{
+.contact_main {
     font-family: Arima;
     font-weight: 700;
     font-size: 52px;
@@ -95,17 +98,18 @@ html {
     align-items: center;
     justify-content: center;
 }
+
 .contact_main h3 {
     margin-left: -30px;
 }
 
-.contact_main>img{
+.contact_main>img {
     height: 48px;
     width: 48px;
 
 }
 
-.contact_from>p{
+.contact_from>p {
     color: #54370D;
     font-family: Palanquin;
     font-weight: 500;
@@ -125,7 +129,7 @@ html {
 
     display: flex;
     flex-direction: column;
-    flex: 1;               
+    flex: 1;
     gap: 10px;
     padding: 3rem 0 0 0
 }
@@ -142,20 +146,20 @@ html {
     outline: none;
 }
 
-.privacy_policy{
+.privacy_policy {
     color: #4EA487;
 }
 
-#check{
+#check {
     color: #54370D;
     padding: 1rem 0 2rem 0;
 }
 
-button{
+button {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     font-family: Arima;
     font-size: 24px;
     font-weight: 700;
@@ -163,25 +167,27 @@ button{
 
     background-color: white;
     border: solid 1px #737373;
-    border-radius:40px;
+    border-radius: 40px;
     padding: 24px 24px;
 
     height: 48px;
     width: 139px;
 }
 
-.footer_wrapper{
+footer {
     background-color: #4ea487;
+}
+
+.footer_wrapper {
     color: white;
     font-size: 1rem;
-
     width: 100%;
     height: 9.5rem;
-    padding: 0rem max(calc(50% - 720px), 0rem);
+    padding: 3.75rem 7.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .footer_schriftlich {
