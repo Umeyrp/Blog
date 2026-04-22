@@ -65,13 +65,12 @@ html {
     justify-content: center;
     width: 100%;
     padding: 60px 119px 60px 121px ;
-    gap: 24px;
 }
 
 .contact_from {
     height: 598px;
     width: 1100px;
-    gap: 56px;
+    gap: 16px;
 
     display: flex;
     flex-direction: column;
@@ -83,16 +82,10 @@ html {
     flex-direction: row;
     gap: 40px;
     width: 100%;
-    padding: 0 60px;
-}
-
-.contact_from>p{
-    font-size: 24px;
-    text-align: center;
 }
 
 .contact_main{
-    width: 100%;
+    font-family: Arima;
     font-weight: 700;
     font-size: 52px;
     color: #4EA487;
@@ -101,20 +94,37 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 }
 
 .contact_main>img{
-    height: 48px ;
+    height: 48px;
     width: 48px;
 
 }
 
+.contact_from>p{
+    color: #54370D;
+    font-family: Palanquin;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 24px;
+
+    text-align: center;
+}
+
 .label {
+    color: #54370D;
+    font-family: Palanquin;
+    font-weight: 500;
+    font-style: medium;
+
     display: flex;
     flex-direction: column;
-    flex: 1;                  /* cada label ocupa metade da largura */
-    gap: 8px;
+    flex: 1;               
+    gap: 17px;
     font-size: 18px;
+    padding-top: 2rem;
 }
 
 .label input {
@@ -126,6 +136,15 @@ html {
     padding: 8px 0;
     width: 100%;
 }
+
+.privacy_policy{
+    color: #4EA487;
+}
+
+#check{
+    padding: 0 0 2rem 0;
+}
+
 button{
     display: flex;
     justify-content: center;
