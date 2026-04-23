@@ -9,8 +9,8 @@ html {
 }
 
 .form_section,
+.faq,
 footer {
-    /*Contentbegrenzung*/
     padding: 0rem max(calc(50% - 720px), 0rem);
 }
 
