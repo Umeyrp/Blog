@@ -236,8 +236,8 @@ footer {
 }
 
 .contact_form {
-    height: 598px;
-    width: 1100px;
+    height: 37.375rem;
+    width: 68.75rem;
 
     display: flex;
     flex-direction: column;
@@ -247,14 +247,14 @@ footer {
 .contact_form>div {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 2.5rem;
     width: 100%;
 }
 
 .contact_main {
     font-family: 'Arima';
     font-weight: 700;
-    font-size: 52px;
+    font-size: 3.25rem;
     color: #4EA487;
 
     display: flex;
@@ -264,12 +264,12 @@ footer {
 }
 
 .contact_main h3 {
-    margin-left: -30px;
+    margin-left: -1.875rem;
 }
 
 .contact_main>img {
-    height: 48px;
-    width: 48px;
+    height: 3rem;
+    width: 3rem;
 
 }
 
@@ -277,9 +277,7 @@ footer {
     color: #54370D;
     font-family: 'Palanquin';
     font-weight: 500;
-    font-style: medium;
-    font-size: 24px;
-
+    font-size: 1.5rem;
     text-align: center;
     line-height: 1;
 }
@@ -288,22 +286,19 @@ footer {
     color: #54370D;
     font-family: 'Palanquin';
     font-weight: 500;
-    font-style: medium;
-    font-size: 24px;
-
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     flex: 1;
-    gap: 10px;
-    padding: 3rem 0 0 0
+    gap: 0.625rem;
+    padding: 3rem 0 0 0;
 }
 
 .label input {
     color: #4EA487;
     font-family: 'Palanquin';
     font-weight: 500;
-    font-style: medium;
-    font-size: 24px;
+    font-size: 1.5rem;
     border: none;
     border-bottom: 1px solid #54370D;
     outline: none;
@@ -317,7 +312,7 @@ footer {
     color: #4EA487;
 }
 
-#check {
+.check {
     color: #54370D;
     padding: 1rem 0 2rem 0;
 }
@@ -327,15 +322,15 @@ button {
     justify-content: center;
     align-items: center;
     font-family: 'Arima';
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #737373;
     background-color: white;
     border: solid 1px #737373;
     border-radius: 40px;
-    padding: 24px 24px;
-    height: 48px;
-    width: 139px;
+    padding: 1.5rem 1.5rem;
+    height: 3rem;
+    width: 8.688rem;
 }
 
 footer {
@@ -386,7 +381,7 @@ footer {
     margin: 0 7.5rem;
     margin-top: 5rem;
     display: flex;
-    gap: 27px;
+    gap: 1.688rem;
     justify-content: space-between;
 }
 
@@ -394,10 +389,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 272px;
+    width: 17rem;
     background-color: #4EA48733;
     border-radius: 30px;
-    padding: 16px 16px;
+    padding: 1rem 1rem;
     flex-shrink: 0;
     max-height: 25rem;
 }
@@ -522,6 +517,7 @@ li {
 }
 
 .tipps>img {
+    max-width: 100%;
     position: absolute;
 }
 
@@ -530,7 +526,7 @@ li {
     top: 4.063rem;
     left: 2.938rem;
     border-radius: 1.875rem;
-    padding: 26px 16px;
+    padding: 1.625rem 1rem;
     background-color: #4EA48733;
 }
 
@@ -543,7 +539,7 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 48px;
+    gap: 3rem;
     margin-top: 5.5rem;
 }
 
@@ -552,26 +548,26 @@ li {
     text-align: center;
     font-family: 'Arima';
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 120%;
     color: #54370D;
 }
 
 .follow_section>p>img {
     position: absolute;
-    top: 50px;
-    left: -16px;
+    top: 3.125rem;
+    left: -1rem;
 }
 
 .share_button {
     border-color: #4EA487;
     background-color: #4EA487;
     color: #F1C953;
-    padding: 24px 24px;
+    padding: 1.5rem 1.5rem;
 }
 
 .share_button>img {
-    padding-right: 8px;
+    padding-right: 0.5rem;
 }
 
 @media screen and (max-width: 1440px) {
