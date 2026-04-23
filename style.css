@@ -221,7 +221,6 @@ footer {
     height: 1.75rem;
     border-radius: 1.25rem;
     background-color: white;
-    margin-bottom: 2.75rem;
     cursor: pointer;
 }
 
@@ -232,7 +231,7 @@ footer {
     padding: 3.75rem 7.5rem;
 }
 
-.contact_from {
+.contact_form {
     height: 598px;
     width: 1100px;
 
@@ -241,7 +240,7 @@ footer {
     align-items: center;
 }
 
-.contact_from>div {
+.contact_form>div {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -270,7 +269,7 @@ footer {
 
 }
 
-.contact_from>p {
+.contact_form>p {
     color: #54370D;
     font-family: 'Palanquin';
     font-weight: 500;
@@ -301,10 +300,13 @@ footer {
     font-weight: 500;
     font-style: medium;
     font-size: 24px;
-
     border: none;
     border-bottom: 1px solid #54370D;
     outline: none;
+}
+
+.slider_buttons_wrapper label {
+    margin-bottom: 2.75rem;
 }
 
 .privacy_policy {
