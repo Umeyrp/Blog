@@ -14,8 +14,6 @@ html {
 }
 
 .site-header_content {
-    max-width: 1440px;
-    margin: 0 auto;
     height: 8rem;
     padding: 0 7.5rem;
     display: flex;
@@ -47,9 +45,9 @@ html {
     font-size: 1.5rem;
 }
 
-
 .highlights_section,
 .form_section,
+.site-header,
 footer {
     /*Contentbegrenzung*/
     padding: 0rem max(calc(50% - 720px), 0rem);
