@@ -8,6 +8,45 @@ html {
     font-size: 16px;
 }
 
+.site-header {
+    background-color: rgba(78, 164, 135, 1);
+    width: 100%;
+}
+
+.site-header_content {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 8rem;
+    padding: 0 7.5rem;
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+
+.site-nav a:hover {
+    color: rgba(241, 201, 83, 1);
+}
+
+.logo img {
+    width: 4.5rem;
+    height: auto;
+    display: block;
+}
+
+.site-nav {
+    display: flex;
+    gap: 4.5rem;
+    flex-direction: row;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: rgba(248, 245, 235, 1);
+    font-family: 'Arima';
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 .highlights_section,
 .form_section,
 footer {
