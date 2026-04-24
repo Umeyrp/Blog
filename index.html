@@ -172,9 +172,14 @@
                         <input type="text" id="help"> </label>
                 </div>
                 <br>
-                <label>
+                <label class="cb-label">
                     <input id="checkbox" type="checkbox" required>
-                    I've read the <span class="privacy_policy"><a href="https://www.privacypolicies.com/" target="_blank" rel="noopener noreferrer">&nbsp;privacy policy&nbsp;</a></span> and agree to the processing of my data as outlined.
+                    <div class="cb-box">
+                        <svg class="checkmark" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <polyline points="3,10 8,15 17,5" stroke="#f1c953" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    I've read the <span class="privacy_policy"><a href="https://www.privacypolicies.com/" target="_blank" rel="noopener noreferrer">privacy policy</a></span> and agree to the processing of my data as outlined.
                 </label>
                 <br><br><br><br><br>
                 <button type="submit">Send</button>

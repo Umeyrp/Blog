@@ -481,11 +481,13 @@ details>p{
     font-weight: normal;
     transition: font-weight 0.2s ease;
     text-decoration: none;
+    display: inline-block;
+    padding: 0 4px; 
 }
 
 .privacy_policy a:hover {
     font-weight: 500;
-    text-shadow: 0.5px 0 0 currentColor;
+    text-shadow: 0.1px 0 0 currentColor;
 }
 
 .privacy_policy a,
@@ -493,9 +495,52 @@ details>p{
 .privacy_policy a:active {
     color: #4ea487;
 }
-#checkbox{
-    background-color: #4ea487;
+
+ .cb-label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    user-select: none;
+
+    font-family: Palanquin;
+    font-weight: 400;
+    font-style: Regular;
+    line-height: 120%;
+    font-size: 15px;
+    color: #54370d;
 }
+
+.cb-label input { display: none; }
+
+.cb-box {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    border: 2px solid #3a2800;
+    border-radius: 4px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+
+.cb-box:hover {
+    background: #f1c953;
+    border-color: #3a2800;
+}
+
+
+.cb-label input:checked + .cb-box {
+    background: #4ea487;
+    border-color: #4ea487;
+}
+
+.checkmark { display: none; }
+.cb-label input:checked + .cb-box .checkmark { display: block; }
+.cb-label:hover input:not(:checked) + .cb-box .checkmark { display: none; }
 
 button {
     display: flex;
