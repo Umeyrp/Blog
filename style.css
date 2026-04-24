@@ -225,6 +225,11 @@ footer {
     gap: 0.5rem;
 }
 
+.highlights_header_wrapper img {
+    height: 3rem;
+    width: 100%;
+}
+
 .highlights_header h2 {
     font-family: 'Arima';
     font-weight: 700;
@@ -268,6 +273,11 @@ footer {
     transition: opacity 150ms;
     cursor: pointer;
     border-top-right-radius: 100px;
+    background-size: cover;
+    /* DAS ist der Schlüssel */
+    background-position: center;
+    /* optional, aber wichtig */
+    background-repeat: no-repeat;
 }
 
 .slider_buttons_wrapper {
@@ -352,6 +362,7 @@ footer {
 }
 
 .slider_element_text p {
+    display: inline;
     font-family: 'Palanquin';
     font-weight: 400;
     font-size: 1.75rem;
@@ -701,72 +712,6 @@ footer {
     gap: 1rem;
 }
 
-@media (max-width: 767px) {
-
-    .site-header_content {
-        height: 70px;
-        padding: 0;
-        justify-content: center;
-        gap: 0;
-    }
-
-    .logo img {
-        width: 56px;
-        height: 56px;
-        object-fit: contain;
-    }
-
-    .site-nav {
-        display: none;
-    }
-
-    .hero-shell {
-        width: 100%;
-        padding-bottom: 0;
-        overflow: hidden;
-    }
-
-    .hero-stage {
-        width: 100%;
-        height: 530px;
-        margin: 0;
-        overflow: hidden;
-    }
-
-    .hero-bg {
-        width: 100%;
-        height: 530px;
-        left: 0;
-        transform: none;
-        object-fit: cover;
-        object-position: 58% center;
-    }
-
-    .hero-left {
-        top: 0;
-        left: 0;
-        width: 260px;
-        height: 260px;
-    }
-
-    .hero-shape {
-        width: 260px;
-        height: 260px;
-        object-fit: fill;
-    }
-
-    .hero-text {
-        display: none;
-    }
-
-    .hero-badge {
-        left: 76px;
-        top: 80px;
-        width: 160px;
-        height: 160px;
-    }
-}
-
 /*==================================ARTICLE 1===================================*/
 .author_section {
     margin: 0 7.5rem;
@@ -1037,13 +982,6 @@ li {
 .share_button>img {
     padding-right: 0.5rem;
 }
-
-@media screen and (max-width: 1440px) {
-    html {
-        font-size: clamp(0.75rem, 0.1964rem + 0.8929vw, 1rem);
-    }
-}
-
 
 /*==================================ARTICLE 3===================================*/
 
@@ -1343,4 +1281,122 @@ aside>h6 {
     pointer-events: none;
     max-width: 146px;
     max-height: 146px;
+}
+
+/* ============================RESPONSIVE==================================== */
+
+@media screen and (max-width:1440px) {
+    html {
+        font-size: clamp(0.875rem, 0.5982rem + 0.4467vw, 1rem);
+        /*min 14px max 16px min 992px max 1440px*/
+    }
+}
+
+@media screen and (max-width:992px) {
+    html {
+        font-size: clamp(0.75rem, 0.674rem + 0.3241vw, 0.875rem);
+        /*min 12px max 14px min 375px max 992px*/
+    }
+
+    .nav-bar a:not(.call-button) {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .site-header_content {
+        height: 70px;
+        padding: 0;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .logo img {
+        width: 56px;
+        height: 56px;
+        object-fit: contain;
+    }
+
+    .site-nav {
+        display: none;
+    }
+
+    .hero-shell {
+        width: 100%;
+        padding-bottom: 0;
+        overflow: hidden;
+    }
+
+    .hero-stage {
+        width: 100%;
+        height: 530px;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .hero-bg {
+        width: 100%;
+        height: 530px;
+        left: 0;
+        transform: none;
+        object-fit: cover;
+        object-position: 58% center;
+    }
+
+    .hero-left {
+        top: 0;
+        left: 0;
+        width: 260px;
+        height: 260px;
+    }
+
+    .hero-shape {
+        width: 260px;
+        height: 260px;
+        object-fit: fill;
+    }
+
+    .hero-text {
+        display: none;
+    }
+
+    .hero-badge {
+        left: 76px;
+        top: 80px;
+        width: 160px;
+        height: 160px;
+    }
+
+    .highlights_header p {
+        display: none;
+    }
+
+    .slider {
+        padding: 0 1.25rem;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .second_textpart {
+        display: none !important;
+    }
+
+    .slider_element_text h2 {
+        font-size: 2.333rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    html {
+        font-size: clamp(0.625rem, -0.1023rem + 3.6364vw, 0.75rem);
+        /*min 10px max 12px min 320px max 375px*/
+    }
+
+    .slider_a {
+        height: 44.417rem;
+    }
+
+    .element_one {
+        background-image: url(./assets/img/slider_image_responsive.png);
+    }
 }
