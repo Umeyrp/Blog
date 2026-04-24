@@ -955,6 +955,83 @@ li {
     background-color: #4EA487;
     color: #F1C953;
     padding: 1.5rem 1.5rem;
+    margin-left: 3.25rem;
+    margin-right: 0.5rem;
+}
+
+.share_wrapper {
+    display: flex;
+}
+
+@keyframes fade_out {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+        width: 0;
+        margin-left: 0.5rem;
+    }
+}
+
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes less_margin {
+    from {
+        margin-left: 3.25rem;
+    }
+
+    to {
+        margin-left: 0.5rem;
+    }
+}
+
+.share_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.share_links a {
+    font-family: 'Arima';
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #4EA487;
+    text-decoration: underline;
+}
+
+.share_links_div {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    gap: 0.5rem;
+}
+
+.share_links_div img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.share_button:focus img {
+    animation: fade_out 250ms forwards;
+}
+
+.share_button:focus {
+    animation: less_margin 250ms forwards;
+}
+
+.share_button:focus+.share_links_div {
+    animation: fade_in 250ms forwards
 }
 
 .share_button>img {
