@@ -713,7 +713,6 @@ footer {
 }
 
 @media (max-width: 767px) {
-
     .site-header_content {
         height: 70px;
         padding: 0;
@@ -776,6 +775,8 @@ footer {
         width: 160px;
         height: 160px;
     }
+
+
 }
 
 /*==================================ARTICLE 1===================================*/
@@ -875,9 +876,40 @@ footer {
 }
 
 .carousel {
-    width: 68.75rem;
-    height: 37.375rem;
-    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.carousel_element {
+    z-index: 1;
+    width: 18.75rem;
+    height: 27.5rem;
+    transform: perspective(250px) rotateY(20deg) translateX(0);
+    transform-origin: 50% 50%;
+    transition: transform 250ms ease-in-out;
+}
+
+.carousel_element img {
+    filter: drop-shadow(5px -9px 20px rgba(0, 0, 0, 0.25));
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel:has(.carousel_element:hover) .carousel_element:has(~ .carousel_element:hover) {
+    transform: perspective(250px) rotateY(20deg) translateX(-50px);
+}
+
+.carousel_element:hover {
+    z-index: 2;
+    transform: perspective(250px) rotateY(0deg) translateX(0) scaleX(1.5) scaleY(1);
+}
+
+.carousel_element:hover~.carousel_element {
+    transform: perspective(250px) rotateY(-20deg) translateX(50px);
 }
 
 .carousel_section>h2 {
@@ -887,12 +919,12 @@ footer {
     line-height: 120%;
     text-align: center;
     color: #54370D;
-    margin-bottom: 4.25rem;
+    margin-bottom: 7rem;
 }
 
 .text_section {
     margin: 0 7.5rem;
-    margin-top: 5.5rem;
+    margin-top: 8rem;
 }
 
 .text_section p,
@@ -1349,6 +1381,10 @@ aside>h6 {
     max-height: 146px;
 }
 
+.arrow_responsive {
+    visibility: hidden;
+}
+
 /* ============================RESPONSIVE==================================== */
 
 @media screen and (max-width:1440px) {
@@ -1440,6 +1476,93 @@ aside>h6 {
     .slider {
         padding: 0 1.25rem;
     }
+
+    .author_section {
+        flex-direction: column;
+        margin: 0 1.25rem;
+        margin-top: 2rem;
+    }
+
+    .author_card {
+        width: 100%;
+    }
+
+    .author_header h2 {
+        font-size: 1.667rem;
+    }
+
+    .author_header h1 {
+        font-size: 3.333rem;
+    }
+
+    .title_wrapper p {
+        font-size: 1.5rem;
+    }
+
+    .header_date {
+        flex-wrap: wrap;
+        gap: 1.333rem;
+    }
+
+    .author_section p {
+        font-size: 1.333rem;
+    }
+
+    .slider_a {
+        height: 44.417rem;
+    }
+
+    .element_one {
+        background-image: url(./assets/img/slider_image_responsive.png);
+    }
+
+    .carousel_section {
+        margin: 0 1.25rem;
+        margin-top: 3.333rem;
+    }
+
+    .carousel_section h2 {
+        font-size: 1.667rem;
+    }
+
+    .text_section {
+        margin: 0 1.417rem;
+        margin-top: 3.333rem;
+    }
+
+    .text_section p,
+    li {
+        font-size: 1.334rem;
+    }
+
+    .tipps {
+        margin-top: 2.667rem;
+        margin-bottom: 12.25rem;
+    }
+
+    .tipps_wrapper {
+        left: 0;
+        padding: 2rem 1.333rem;
+    }
+
+    .tipps>img {
+        width: 16.327rem;
+        height: 6.5rem;
+    }
+
+    .list {
+        margin: 0;
+        margin-top: 2.667rem;
+    }
+
+    .follow_section>p>img:first-of-type {
+        display: none;
+    }
+
+    .arrow_responsive {
+        visibility: visible;
+        ;
+    }
 }
 
 @media screen and (max-width: 512px) {
@@ -1456,13 +1579,5 @@ aside>h6 {
     html {
         font-size: clamp(0.625rem, -0.1023rem + 3.6364vw, 0.75rem);
         /*min 10px max 12px min 320px max 375px*/
-    }
-
-    .slider_a {
-        height: 44.417rem;
-    }
-
-    .element_one {
-        background-image: url(./assets/img/slider_image_responsive.png);
     }
 }

@@ -35,7 +35,7 @@
             <div class="header_date">
                 <div class="wrapper">
                     <img src="./assets/icons/calendar_month.svg" alt="">
-                    Date:<p id="date"></p>
+                    <p>Date:</p><p id="date"></p>
                 </div>
                 <div class="wrapper">
                     <img src="./assets/icons/eyeglasses_2.svg" alt="">
@@ -65,7 +65,23 @@
     </section>
     <section class="carousel_section">
         <h2>TOP 5 beach destinations for 2026</h2>
-        <div class="carousel"></div>
+        <div class="carousel">
+            <div class="carousel_element">
+                <img src="./assets/img/beach_4.jpg" alt="">
+            </div>
+            <div class="carousel_element">
+                <img src="./assets/img/beach_3.jpg" alt="">
+            </div>
+            <div class="carousel_element">
+                <img src="./assets/img/beach_2.jpg" alt="">
+            </div>
+            <div class="carousel_element">
+                <img src="./assets/img/beach_1.jpg" alt="">
+            </div>
+            <div class="carousel_element">
+                <img src="./assets/img/beach_5.jpg" alt="">
+            </div>
+        </div>
     </section>
     <section class="text_section">
         <p>Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta
@@ -93,7 +109,7 @@
         </div>
 
         <div class="tipps">
-            <img src="./assets/img/tipps_img.png" alt="">
+            <img src="./assets/icons/tipps_icon.svg" alt="">
             <div class="tipps_wrapper">
                 <ol>
                     <li>Ante in commodo porta scelerisque turpis gravida semper. <span>Useful link.</span> Egestas a
@@ -121,6 +137,7 @@
     <section class="follow_section">
         <p>
             <img src="./assets/icons/arrow.svg" alt="">
+            <img src="./assets/icons/arrow_responsive.svg" class="arrow_responsive" alt="">
             Follow me for more content like this, and<br>share the article with your friends!
         </p>
         <div class="share_wrapper">
@@ -138,7 +155,7 @@
         </div>
     </section>
 
-    <footer>
+     <!-- <footer>
         <div class="footer_wrapper">
             <div class="footer_schriftlich">
                 <div class="footer_copyright">
@@ -157,7 +174,8 @@
                 </a>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
     <script>
         const d = new Date();
         const day = String(d.getDate()).padStart(2, '0');
