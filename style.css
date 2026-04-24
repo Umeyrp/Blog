@@ -756,7 +756,7 @@ main{
 }
 
 article>h3{
-    font-family: Palaquin;
+    font-family: Palanquin;
     font-weight: 600;
     font-style: SemiBold;
     font-size: 2.5rem;
@@ -769,7 +769,7 @@ article>h2{
     font-weight: 700;
     font-style: Bold;
     font-size: 3.875rem;
-    line-height: 110%;
+    line-height: 120%;
     color: #f1c953;
 }
 
@@ -823,7 +823,7 @@ main>p{
     line-height: 120%;
 }
 
-aside{
+/* aside{
     height: 24.313rem;
     width: 17rem;
     background-color: #4ea487;
@@ -864,7 +864,7 @@ aside>h6{
     font-family: Palanquin;
     font-weight: 400;
     color: #54370d;
-}
+} */
 
 .rain_section{
     margin: 0 auto;
@@ -939,7 +939,7 @@ aside>h6{
 
 .section_button{
     margin: 0 auto;
-    padding: 0px 7.5rem 5rem 7.5rem;
+    padding: 0 7.5rem 5rem 7.5rem;
 
     display: flex;
     flex-direction: column;
