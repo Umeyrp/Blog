@@ -62,7 +62,7 @@
                 landscapes of Scandinavia, each destination offers a distinct way to explore the world. </p>
         </header>
         <div class="slider">
-            <section class="slider_a">
+            <div class="slider_a">
                 <div class="slider_buttons_wrapper">
                     <label for="one">
                         <div class="radio_button radio_button_one"></div>
@@ -82,7 +82,7 @@
                     </label>
                 </div>
                 <div class="slider_a_wrapper">
-                    <a href="https://www.google.com" target="_blank">
+                    <a href="./article_1.html">
                         <div class="slider_a_element element_one">
                             <div class="slider_element_text">
                                 <h2>The World’s Most Breathtaking Beaches</h2>
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="https://www.google.com" target="_blank">
+                    <a href="">
                         <div class="slider_a_element element_two">
                             <div class="slider_element_text">
                                 <h2>Copenhagen in 3 Days: Big Experiences, Smart Spending</h2>
@@ -103,7 +103,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="https://www.google.com" target="_blank">
+                    <a href="./article_3.html">
                         <div class="slider_a_element element_three">
                             <div class="slider_element_text">
                                 <h2>Pattaya Pulse:<br>
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="https://www.google.com" target="_blank">
+                    <a href="">
                         <div class="slider_a_element element_four">
                             <div class="slider_element_text">
                                 <h2>Mountain Fuji</h2>
@@ -130,41 +130,89 @@
                         </div>
                     </a>
                 </div>
-            </section>
+            </div>
         </div>
     </section>
 
-    <section class="form_section">
+    <section>
+        <div class="faq">
+            <div class="faq_main">
+                <img src="assets/icons/live_help.png" alt="FAQ">
+                <h3>FAQ</h3>
+            </div>
+            <br><br>
+            <details class="faq_container">
+                <summary>
+                    <h4>What's the story behind my Travel blog?</h4>
+                    <img class="arrow-img" src="assets/icons/arrow_forward_ios.png" alt="arrow">
+                </summary>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum in veniam illum ea architecto ex inventore expedita quibusdam consequatur facere quidem, non eaque praesentium eos sunt illo pariatur eius. Vero.</p>
+
+            </details>
+            <br><br>
+
+            <details class="faq_container">
+                <summary>
+                    <h4>How do i plan, document, and share my travels?</h4>
+                    <img class="arrow-img" src="assets/icons/arrow_forward_ios.png" alt="arrow">
+                </summary>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ab non libero ipsum, facilis repellat quo maxime corporis reiciendis obcaecati delectus aspernatur quos, nemo atque laboriosam praesentium vero rem quae.</p>
+
+            </details>
+            <br><br>
+
+            <details class="faq_container">
+                <summary>
+                    <h4>How can brands, companies, or fellow creators collaborate with me or get in touch?</h4>
+                    <img class="arrow-img" src="assets/icons/arrow_forward_ios.png" alt="arrow">
+                </summary>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum voluptatum magni quidem minus quod optio pariatur cupiditate maiores nemo natus, impedit corporis sunt facere. Eius commodi repudiandae asperiores nulla veniam?<p>
+            </details>
+             <br><br>
+             
+             <details class="faq_container">
+                <summary>
+                    <h4>How can readers support this blog and the work behind it?</h4>
+                    <img class="arrow-img" src="assets/icons/arrow_forward_ios.png" alt="arrow">
+                </summary>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit inventore accusamus assumenda vitae praesentium, tempore ipsam? Molestias, maxime natus incidunt dignissimos asperiores explicabo sunt dolorem esse, minima officiis magni quae?<p>
+            </details>
+
+        </div>
+
+    </section>
+
+    <section>
         <form action="" method="get" class="form">
-            <div class="contact_from">
+            <div class="contact_form">
                 <div class="contact_main">
                     <img src="assets/icons/person_pin.png" alt="Person">
-                    <h3>Contact from</h3>
+                    <h3>Contact form</h3>
                 </div>
                 <p>Have a question or an ideia to collaborate? <br>Get in touch-I'd love hear from you and
                     explore how
                     we can work together.</p>
 
                 <div>
-                    <label class="label" for="text"> What`s your name?
-                        <input type="text" name="name">
+                    <label class="label" for="name"> What`s your name?
+                        <input type="text" id="name" name="name" required>
                     </label>
-                    <label class="label" for="text">What's your email?
-                        <input type="email" name="email">
+                    <label class="label" for="email">What's your email?
+                        <input type="email" id="email" name="email" required>
                     </label>
                 </div>
 
                 <div>
-                    <label class="label" for="text">How can i help? <input type="text"> </label>
+                    <label class="label" for="help">How can i help? 
+                        <input type="text" id="help"> </label>
                 </div>
-                <label id="check" for="check">
-                    <input type="checkbox">
-                    I've read the <span class="privacy_policy"> privacy policy</span> and agree to the
-                    processing of my
-                    data as outlined.
+                <br>
+                <label>
+                    <input id="checkbox" type="checkbox" required>
+                    I've read the <span class="privacy_policy"><a href="https://www.privacypolicies.com/" target="_blank" rel="noopener noreferrer">&nbsp;privacy policy&nbsp;</a></span> and agree to the processing of my data as outlined.
                 </label>
-                <br><br>
-                <button>Send</button>
+                <br><br><br><br><br>
+                <button type="submit">Send</button>
             </div>
         </form>
     </section>
@@ -181,10 +229,10 @@
             </div>
 
             <div class="footer_social">
-                <a href="https://www.tiktok.com/explore"><img src="assets/icons/Tiktok_icon 1.png" alt="Tiktok"></a>
-                <a href="https://www.youtube.com/"><img src="assets/icons/youtube.png" alt="Youtube"></a>
-                <a href="https://www.facebook.com/"><img src="assets/icons/facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/"> <img src="assets/icons/Instagram_logo_2016 1.png" alt="Instagram">
+                <a href="https://www.tiktok.com/explore" target="_blank"><img src="assets/icons/Tiktok_icon 1.png" alt="Tiktok"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="assets/icons/youtube.png" alt="Youtube"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="assets/icons/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"> <img src="assets/icons/Instagram_logo_2016 1.png" alt="Instagram">
                 </a>
             </div>
         </div>
