@@ -712,6 +712,72 @@ footer {
     gap: 1rem;
 }
 
+@media (max-width: 767px) {
+
+    .site-header_content {
+        height: 70px;
+        padding: 0;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .logo img {
+        width: 56px;
+        height: 56px;
+        object-fit: contain;
+    }
+
+    .site-nav {
+        display: none;
+    }
+
+    .hero-shell {
+        width: 100%;
+        padding-bottom: 0;
+        overflow: hidden;
+    }
+
+    .hero-stage {
+        width: 100%;
+        height: 530px;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .hero-bg {
+        width: 100%;
+        height: 530px;
+        left: 0;
+        transform: none;
+        object-fit: cover;
+        object-position: 58% center;
+    }
+
+    .hero-left {
+        top: 0;
+        left: 0;
+        width: 260px;
+        height: 260px;
+    }
+
+    .hero-shape {
+        width: 260px;
+        height: 260px;
+        object-fit: fill;
+    }
+
+    .hero-text {
+        display: none;
+    }
+
+    .hero-badge {
+        left: 76px;
+        top: 80px;
+        width: 160px;
+        height: 160px;
+    }
+}
+
 /*==================================ARTICLE 1===================================*/
 .author_section {
     margin: 0 7.5rem;
