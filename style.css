@@ -237,7 +237,7 @@ footer {
     color: #4EA487;
 }
 
-.slider {
+.slider_a_div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,27 +330,27 @@ footer {
     z-index: 1;
 }
 
-.slider_a:has(input[value="one"]:checked) .radio_button_one {
+.slider_a:has(input[value="one"]:checked) .radio_button_slider_a_one {
     width: 2.5rem;
     background-color: #F1C953;
 }
 
-.slider_a:has(input[value="two"]:checked) .radio_button_two {
+.slider_a:has(input[value="two"]:checked) .radio_button_slider_a_two {
     width: 2.5rem;
     background-color: #F1C953;
 }
 
-.slider_a:has(input[value="three"]:checked) .radio_button_three {
+.slider_a:has(input[value="three"]:checked) .radio_button_slider_a_three {
     width: 2.5rem;
     background-color: #F1C953;
 }
 
-.slider_a:has(input[value="four"]:checked) .radio_button_four {
+.slider_a:has(input[value="four"]:checked) .radio_button_slider_a_four {
     width: 2.5rem;
     background-color: #F1C953;
 }
 
-.slider_element_text {
+.slider_a_element_text {
     width: 72%;
     top: 3.375rem;
     left: 2.375rem;
@@ -361,7 +361,7 @@ footer {
     backdrop-filter: blur(5px);
 }
 
-.slider_element_text h2 {
+.slider_a_element_text h2 {
     font-family: 'Palanquin Dark';
     font-weight: 600;
     font-size: 3rem;
@@ -369,7 +369,7 @@ footer {
     line-height: 100%;
 }
 
-.slider_element_text p {
+.slider_a_element_text p {
     display: inline;
     font-family: 'Palanquin';
     font-weight: 400;
@@ -1418,7 +1418,7 @@ aside>h6 {
         display: none;
     }
 
-    .slider {
+    .slider_a_div{
         padding: 0 1.25rem;
     }
 
@@ -1455,14 +1455,6 @@ aside>h6 {
 
     .slider_a {
         height: 44.417rem;
-    }
-
-    .slider_a_article_1 {
-        display: none;
-    }
-
-    .element_one {
-        background-image: url(./assets/img/slider_image_responsive.png);
     }
 
     .carousel_section {
@@ -1519,8 +1511,12 @@ aside>h6 {
         display: none !important;
     }
 
-    .slider_element_text h2 {
+    .slider_a_element_text h2 {
         font-size: 2.333rem;
+    }
+
+        .element_one {
+        background-image: url(./assets/img/slider_image_responsive.png);
     }
 }
 
