@@ -264,6 +264,14 @@ footer {
     display: flex;
 }
 
+.slider_b_wrapper {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+}
+
 .slider_a_element {
     position: absolute;
     width: 100%;
@@ -712,73 +720,6 @@ footer {
     gap: 1rem;
 }
 
-@media (max-width: 767px) {
-    .site-header_content {
-        height: 70px;
-        padding: 0;
-        justify-content: center;
-        gap: 0;
-    }
-
-    .logo img {
-        width: 56px;
-        height: 56px;
-        object-fit: contain;
-    }
-
-    .site-nav {
-        display: none;
-    }
-
-    .hero-shell {
-        width: 100%;
-        padding-bottom: 0;
-        overflow: hidden;
-    }
-
-    .hero-stage {
-        width: 100%;
-        height: 530px;
-        margin: 0;
-        overflow: hidden;
-    }
-
-    .hero-bg {
-        width: 100%;
-        height: 530px;
-        left: 0;
-        transform: none;
-        object-fit: cover;
-        object-position: 58% center;
-    }
-
-    .hero-left {
-        top: 0;
-        left: 0;
-        width: 260px;
-        height: 260px;
-    }
-
-    .hero-shape {
-        width: 260px;
-        height: 260px;
-        object-fit: fill;
-    }
-
-    .hero-text {
-        display: none;
-    }
-
-    .hero-badge {
-        left: 76px;
-        top: 80px;
-        width: 160px;
-        height: 160px;
-    }
-
-
-}
-
 /*==================================ARTICLE 1===================================*/
 .author_section {
     margin: 0 7.5rem;
@@ -897,6 +838,10 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.slider_b{
+    display: none;
 }
 
 .carousel:has(.carousel_element:hover) .carousel_element:has(~ .carousel_element:hover) {
@@ -1512,6 +1457,10 @@ aside>h6 {
         height: 44.417rem;
     }
 
+    .slider_a_article_1 {
+        display: none;
+    }
+
     .element_one {
         background-image: url(./assets/img/slider_image_responsive.png);
     }
@@ -1575,9 +1524,125 @@ aside>h6 {
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
     html {
         font-size: clamp(0.625rem, -0.1023rem + 3.6364vw, 0.75rem);
         /*min 10px max 12px min 320px max 375px*/
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .slider_b_elements {
+        position: relative;
+        left: 20%;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 10px
+    }
+
+    .slider_b_element {
+        transform: perspective(250px) rotateY(20deg) translateX(80px);
+    }
+
+    .slider_b_element img {
+        filter: drop-shadow(5px -9px 20px rgba(0, 0, 0, 0.25));
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: none;
+    }
+
+    .slider_b:has(input[value="one"]:checked) .slider_b_element_one {
+        transform: perspective(250px) rotateY(0) translateX(0);
+    }
+
+    .slider_b:has(input[value="two"]:checked) .slider_b_element_two {
+        transform: perspective(250px) rotateY(0) translateX(50px);
+    }
+
+    .slider_b:has(input[value="three"]:checked) .slider_b_element_three {
+        transform: perspective(250px) rotateY(0) translateX(50px);
+    }
+
+    .slider_b:has(input[value="four"]:checked) .slider_b_element_four {
+        transform: perspective(250px) rotateY(0) translateX(0);
+    }
+
+    .slider_b:has(input[value="five"]:checked) .slider_b_element_five {
+        transform: perspective(250px) rotateY(0) translateX(0);
+    }
+
+    .slider_b:has(input[value="one"]:checked) .slider_b_elements {
+        left: 20%;
+        transition: all 500ms ease-in-out;
+    }
+
+    .slider_b:has(input[value="two"]:checked) .slider_b_elements {
+        left: -65%;
+        transition: all 500ms ease-in-out;
+    }
+
+    .slider_b:has(input[value="three"]:checked) .slider_b_elements {
+        left: -132%;
+        transition: all 500ms ease-in-out;
+    }
+
+    .slider_b:has(input[value="four"]:checked) .slider_b_elements {
+        left: -185%;
+        transition: all 500ms ease-in-out;
+    }
+
+    .slider_b:has(input[value="five"]:checked) .slider_b_elements {
+        left: -254%;
+        transition: all 500ms ease-in-out;
+    }
+
+    .slider_b:has(input[value="one"]:checked) .radio_button_slider_b_one {
+        width: 2.5rem;
+        background-color: #4EA487;
+    }
+
+    .slider_b:has(input[value="two"]:checked) .radio_button_slider_b_two {
+        width: 2.5rem;
+        background-color: #4EA487;
+    }
+
+    .slider_b:has(input[value="three"]:checked) .radio_button_slider_b_three {
+        width: 2.5rem;
+        background-color: #4EA487;
+    }
+
+    .slider_b:has(input[value="four"]:checked) .radio_button_slider_b_four {
+        width: 2.5rem;
+        background-color: #4EA487;
+    }
+
+    .slider_b:has(input[value="five"]:checked) .radio_button_slider_b_five {
+        width: 2.5rem;
+        background-color: #4EA487;
+    }
+
+    .slider_b {
+        position: relative;
+        width: 100%;
+        height: 35.125rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .radio_button_slider_b {
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 1.25rem;
+        background-color: #4EA4874D;
+        cursor: pointer;
     }
 }
