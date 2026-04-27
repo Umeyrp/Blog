@@ -391,30 +391,6 @@ footer {
     cursor: pointer;
 }
 
-.faq {
-    display: 100%;
-    padding: 7.813rem 7.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.faq_main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.faq_main>h3 {
-    font-family: 'Arima';
-    font-weight: 700;
-    line-height: 120%;
-    color: #4EA487;
-    font-size: 3.25rem;
-}
-
 .faq_main>img {
     height: 3rem;
     width: 3rem;
@@ -425,11 +401,9 @@ footer {
     border: solid 0px;
     border-radius: 0.75rem;
     padding: 1rem 0.875rem;
-
 }
 
 .faq_container>summary {
-
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -480,7 +454,6 @@ details>p {
 }
 
 .faq {
-    display: 100%;
     padding: 7.813rem 7.5rem;
     display: flex;
     flex-direction: column;
@@ -498,19 +471,14 @@ details>p {
 .faq_main>h3 {
     color: #4EA487;
     font-size: 3.25rem;
+    font-family: 'Arima';
+    font-weight: 700;
+    line-height: 120%;
 }
 
 .faq_main>img {
     height: 3rem;
     width: 3rem;
-}
-
-.faq_container {
-    width: 75rem;
-    border: solid 0px;
-    border-radius: 0.75rem;
-    padding: 1rem 0.875rem;
-
 }
 
 .faq_container>summary {
@@ -520,28 +488,6 @@ details>p {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-}
-
-details {
-    width: 1200px;
-    background-color: #f1c953;
-    border: solid 0px;
-    border-radius: 0.75rem;
-    padding: 1rem 0.875rem;
-}
-
-details>summary {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 1.813rem;
-}
-
-details>summary>h4 {
-    font-family: Palanquin;
-    font-size: 1.5rem;
-    color: #54370D;
 }
 
 .arrow-img {
@@ -1339,6 +1285,10 @@ aside>h6 {
     display: none;
 }
 
+.mobile_nav {
+    display: none;
+}
+
 /* ============================RESPONSIVE==================================== */
 
 @media screen and (max-width:1440px) {
@@ -1699,5 +1649,21 @@ aside>h6 {
     html {
         font-size: clamp(0.625rem, -0.1023rem + 3.6364vw, 0.75rem);
         /*min 10px max 12px min 320px max 375px*/
+    }
+
+    .mobile_nav {
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        gap: 48px;
+        padding: 24px 25px;
+        background-color: rgba(241, 201, 83, 1);
+        z-index: 2;
+        justify-content: center;
+    }
+
+    .mobile_nav img {
+        height: 35px;
     }
 }
