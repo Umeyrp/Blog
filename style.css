@@ -842,19 +842,18 @@ li {
 
 .tipps {
     position: relative;
-    min-height: 16.25rem;
-    margin-bottom: 5.5rem;
+    margin-top: 9.667rem;
+    margin-bottom: 2.5rem;
 }
 
 .tipps>img {
-    width: 12.875rem;
+    width: 200px;
+    height: 70px;
     position: absolute;
+    transform: translate(-20%, -50%);
 }
 
 .tipps_wrapper {
-    position: absolute;
-    top: 4.063rem;
-    left: 2.938rem;
     border-radius: 1.875rem;
     padding: 1.625rem 1rem;
     background-color: #4EA48733;
@@ -890,16 +889,25 @@ li {
 }
 
 .share_button {
-    border-color: #4EA487;
     background-color: #4EA487;
     color: #F1C953;
-    padding: 1.5rem 1.5rem;
-    margin-left: 3.25rem;
-    margin-right: 0.5rem;
+    padding: 24px 24px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border-radius: 40px;
+    justify-content: center;
+    font-family: 'Arima';
+    font-size: 24px;
+    font-weight: 700;
+    height: 48px;
+    width: 158px;
 }
 
 .share_wrapper {
     display: flex;
+    margin-left: 9.25rem;
+
 }
 
 @keyframes fade_out {
@@ -910,7 +918,7 @@ li {
     to {
         opacity: 0%;
         width: 0;
-        margin-left: 0.5rem;
+        display: none;
     }
 }
 
@@ -928,11 +936,11 @@ li {
 
 @keyframes less_margin {
     from {
-        margin-left: 3.25rem;
+        margin-left: 9.25rem;
     }
 
     to {
-        margin-left: 0.5rem;
+        margin-left:5.5rem;
     }
 }
 
@@ -954,6 +962,7 @@ li {
     align-items: center;
     opacity: 0;
     gap: 0.5rem;
+    
 }
 
 .share_links_div img {
@@ -961,20 +970,24 @@ li {
     width: 2rem;
 }
 
-.share_button:focus img {
+#share_button_activate:checked~.share_wrapper .share_button>img {
     animation: fade_out 250ms forwards;
 }
 
-.share_button:focus {
+#share_button_activate:checked~.share_wrapper {
     animation: less_margin 250ms forwards;
 }
 
-.share_button:focus+.share_links_div {
+#share_button_activate:checked~.share_wrapper .share_links_div {
     animation: fade_in 250ms forwards
 }
 
 .share_button>img {
     padding-right: 0.5rem;
+}
+
+#share_button_activate {
+    display: none;
 }
 
 /*==================================ARTICLE 3===================================*/
@@ -1435,19 +1448,9 @@ aside>h6 {
         font-size: 1.334rem;
     }
 
-    .tipps {
-        margin-top: 2.667rem;
-        margin-bottom: 12.25rem;
-    }
-
     .tipps_wrapper {
         left: 0;
         padding: 2rem 1.333rem;
-    }
-
-    .tipps>img {
-        width: 16.327rem;
-        height: 6.5rem;
     }
 
     .list {
