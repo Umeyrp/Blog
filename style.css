@@ -962,7 +962,7 @@ li {
     align-items: center;
     opacity: 0;
     gap: 0.5rem;
-    
+    padding-left: 0.438rem;
 }
 
 .share_links_div img {
