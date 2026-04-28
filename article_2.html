@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./fonts.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/logo.svg">
     <title>Article 2 / Video</title>
 </head>
 
 <body>
     <header class="site-header">
         <div class="site-header_content">
-            <a href="#" class="logo">
+            <a href="./index.html" class="logo">
                 <img src="./assets/icons/logo.svg" alt="Blog Logo">
             </a>
 
@@ -124,18 +125,22 @@
     <section class="follow_section">
         <p>
             <img src="./assets/icons/arrow.svg" alt="">
+            <img src="./assets/icons/arrow_responsive.svg" class="arrow_responsive" alt="">
             Follow me for more content like this, and<br>share the article with your friends!
         </p>
+        <input type="checkbox" id="share_button_activate" name="share_activated">
         <div class="share_wrapper">
-            <button class="share_button">
-                <img src="./assets/icons/share_yellow.svg" alt="share_icon_yellow">
-                Share
-            </button>
+            <label for="share_button_activate">
+                <div class="share_button">
+                    <img src="./assets/icons/share_yellow.svg" alt="share_icon_yellow">
+                    Share
+                </div>
+            </label>
             <div class="share_links_div">
                 <img src="./assets/icons/share.svg" alt="share_icon_green">
                 <div class="share_links">
-                    <a href="#">LinkedIn</a>
-                    <a href="#">WhatsApp</a>
+                    <a href="https://de.linkedin.com/" target="_blank">LinkedIn</a>
+                    <a href="https://www.whatsapp.com/?lang=de" target="_blank">WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -162,11 +167,20 @@
         </div>
     </footer>
 
+
     <div class="mobile_nav">
-        <img src="./assets/icons/Home_green.svg" alt="">
-        <img src="./assets/icons/rocket_launch_green.svg" alt="">
-        <img src="./assets/icons/live_help_green.svg" alt="">
-        <img src="./assets/icons/person_pin_green.svg" alt="">
+        <a href="./index.html">
+            <img src="./assets/icons/Home_green.svg" alt="">
+        </a>
+        <a href="./index.html#highlights">
+            <img src="./assets/icons/rocket_launch_green.svg" alt="">
+        </a>
+        <a href="./index.html#faq">
+            <img src="./assets/icons/live_help_green.svg" alt="">
+        </a>
+        <a href="./index.html#contact">
+            <img src="./assets/icons/person_pin_green.svg" alt="">
+        </a>
     </div>
 
     <script>
