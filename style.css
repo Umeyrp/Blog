@@ -894,7 +894,7 @@ li {
     to {
         opacity: 0%;
         width: 0;
-        display: none;
+        margin-left: -10px;
     }
 }
 
