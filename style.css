@@ -508,7 +508,6 @@ details[open] .arrow-img {
     font-family: 'Arima';
     font-weight: 700;
     font-size: 3.25rem;
-    font-size: 3.25rem;
     color: #4EA487;
     display: flex;
     align-items: center;
@@ -517,15 +516,11 @@ details[open] .arrow-img {
 
 .contact_main h3 {
     margin-left: -1.875rem;
-    margin-left: -1.875rem;
 }
 
 .contact_main>img {
     height: 3rem;
     width: 3rem;
-    height: 3rem;
-    width: 3rem;
-
 }
 
 .contact_form>p {
