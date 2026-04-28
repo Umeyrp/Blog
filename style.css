@@ -397,18 +397,10 @@ footer {
 }
 
 .faq_container {
-    width: 75rem;
+    width: 100%;
     border: solid 0px;
     border-radius: 0.75rem;
     padding: 1rem 0.875rem;
-}
-
-.faq_container>summary {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
 }
 
 details {
@@ -417,14 +409,6 @@ details {
     border: solid 0px;
     border-radius: 0.75rem;
     padding: 1rem 0.875rem;
-}
-
-details>summary {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 1.813rem;
 }
 
 details>summary>h4 {
@@ -454,7 +438,9 @@ details>p {
 }
 
 .faq {
-    padding: 7.813rem 7.5rem;
+    padding: 5rem 1.25rem;
+    ;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -507,9 +493,6 @@ details[open] .arrow-img {
 }
 
 .contact_form {
-    height: 37.375rem;
-    width: 68.75rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -517,8 +500,6 @@ details[open] .arrow-img {
 
 .contact_form>div {
     display: flex;
-    flex-direction: row;
-    gap: 2.5rem;
     gap: 2.5rem;
     width: 100%;
 }
@@ -530,7 +511,6 @@ details[open] .arrow-img {
     font-size: 3.25rem;
     color: #4EA487;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -552,9 +532,7 @@ details[open] .arrow-img {
     color: #54370D;
     font-family: 'Palanquin';
     font-weight: 500;
-    font-style: medium;
     font-size: 1.5rem;
-
     text-align: center;
     line-height: 1;
 }
@@ -587,6 +565,15 @@ details[open] .arrow-img {
 
 .slider_b_buttons_wrapper label {
     margin: 2.75rem 0;
+}
+
+.privacy_policy_label {
+    font-family: 'Palanquin';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+    color: #54370D;
+    padding: 2rem;
 }
 
 .privacy_policy {
@@ -940,7 +927,7 @@ li {
     }
 
     to {
-        margin-left:5.5rem;
+        margin-left: 5.5rem;
     }
 }
 
@@ -1159,8 +1146,7 @@ aside>h6 {
 }
 
 .rain_section {
-    margin: 0 auto;
-
+    margin: 88px auto;
     padding: 0 7.5rem 5rem 7.5rem;
     display: flex;
     flex-direction: column;
@@ -1647,6 +1633,14 @@ aside>h6 {
 
     .mobile_nav img {
         height: 35px;
+    }
+
+    .form {
+        padding: 1rem;
+    }
+
+    .input_div {
+        flex-direction: column;
     }
 }
 
