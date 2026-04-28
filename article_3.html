@@ -27,11 +27,10 @@
     <section class="author_section">
         <div class="author_header">
             <div class="title_wrapper">
-                <h2>Where the Ocean Meets Your Soul</h2>
-                <h1>The World’s Most Breathtaking Beaches</h1>
-                <p>From powder-soft white sands to dramatic coastlines kissed by turquoise waves, these beaches are more
-                    than
-                    destinations — they’re feelings.</p>
+                <h2>Thailand’s City That Never Sleeps</h2>
+                <h1>Pattaya Pulse: Food, Sun and Neon Nights</h1>
+                <p>From bustling promenades to nearby islands, the city offers an energetic and diverse escape. Discover
+                    Pattaya City, with vibrant nightlife and rich cultural landmarks.</p>
             </div>
             <div class="header_date">
                 <div class="wrapper">
@@ -62,8 +61,18 @@
             </div>
             <p>I’ve been traveling since 2017, chasing moments instead of plans.
                 I’m fascinated by snakes, love sharks, would happily spend weeks deep in the jungle, and can never get
-                enough papaya. As long as there’s a next destination, I know I’m exactly where I’m meant to be.</p>
+                enough papaya. As long as there’s a next destination, I know I’m exactly where I’m meant to be.
+            </p>
         </div>
+    </section>
+    <section class="text_section">
+        <p>Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta
+            scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
+            malesuada. Eta scelerisque turpis gravida semper. <br>
+            Lorem ipsum dolor sit ameta enim vestibulum malesuada. Ante intrew commodo porta scelerisque turpis. ipsum
+            dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis
+            gravida semper.
+        </p>
     </section>
 
     <section class="rain_section">
@@ -152,12 +161,15 @@
         <img src="./assets/icons/person_pin_green.svg" alt="">
     </div>
 
-    <div class="mobile_nav">
-        <img src="./assets/icons/Home_green.svg" alt="">
-        <img src="./assets/icons/rocket_launch_green.svg" alt="">
-        <img src="./assets/icons/live_help_green.svg" alt="">
-        <img src="./assets/icons/person_pin_green.svg" alt="">
-    </div>
+    <script>
+        const d = new Date();
+        const day = String(d.getDate()).padStart(2, '0');
+        const month = String(d.getMonth() + 1).padStart(2, '0'); // +1, da Monate bei 0 beginnen
+        const year = d.getFullYear();
+        const formattedDate = `${day}.${month}.${year}`;
+        document.getElementById("date").innerHTML = formattedDate;
+    </script>
 </body>
+
 
 </html>
