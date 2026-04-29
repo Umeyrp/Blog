@@ -845,6 +845,7 @@ li {
     align-items: center;
     flex-direction: column;
     gap: 3rem;
+    margin: 0 7.5rem;
     margin-top: 5.5rem;
 }
 
@@ -1128,7 +1129,7 @@ aside>h6 {
 }
 
 .rain_section {
-    margin: 88px auto;
+    margin: 88px 7.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1187,6 +1188,7 @@ aside>h6 {
     font-size: 2rem;
     line-height: 120%;
     color: #54370d;
+    text-align: center;
 }
 
 .graphics_info>p {
@@ -1311,6 +1313,26 @@ aside>h6 {
     .article-video>img.play-button {
         height: 10rem;
         width: 10rem;
+    }
+
+    .follow_section {
+        margin: 0 1.25rem;
+    }
+
+    .graphics_content {
+        gap: 2rem;
+    }
+
+    .rain_section {
+        margin: 3rem 1.25rem;
+    }
+
+    .rain_section>p {
+        margin: 2rem 0;
+    }
+
+    .text_section{
+        margin-top: 3rem;
     }
 }
 
